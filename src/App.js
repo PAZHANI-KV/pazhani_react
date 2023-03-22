@@ -1,8 +1,9 @@
-import { Badge } from 'react-bootstrap';
+import { Badge, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { useState } from 'react';
 import { Cards } from './components/Cards';
+import Stateless from './components/Stateless';
 
 function App() {
 
@@ -40,6 +41,12 @@ function App() {
   return (
 
     <div className="App">
+      <Button
+      name="My button"
+      bgclr="pink"
+      clr="black"
+      onClick={() => console.log("clicked")}
+      />
       <div className="cartdiv">
         <Badge bg="success">
           Cart {count}
@@ -53,8 +60,8 @@ function App() {
           count={count}
         />)}
       </div >
-    </div>
-
+      <Stateless/>
+</div>
 
   );
 }

@@ -29,16 +29,16 @@ export function Cards({ prod, idx, setCount, count }) {
               onClick={() => console.log("BUY BUTTON CLICKED")}
             >BUY NOW</Button>{"   "} */}
   
-          {show ? <Button
+           {show ? <Button
             variant="primary"
             //on clicking buy now button, the value of show will be changed from true to false and again from false to true alternatively!
             onClick={addToCart}
-          >ADD TO CART</Button> : ""} {"  "}
+          >ADD TO CART</Button> : ""}
   
   
   
   
-          {/* conditional rendering */}
+          {/* conditional rendering  */}
           {!show ? <Button
             variant="danger"
             //  EXAMPLE FOR HANDLING EVENTS(HERE onClick event is used inside a function which is one of the events)
@@ -46,6 +46,7 @@ export function Cards({ prod, idx, setCount, count }) {
           >REMOVE FROM CART</Button> : ""}
    
   
+
   
   
   
